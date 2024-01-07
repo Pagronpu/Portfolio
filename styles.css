@@ -6,7 +6,7 @@ body {
 
 
 .introduction{
-    padding-top: 10px;
+    padding-top: 20px;
     text-align: center; /* Center the content horizontally */
     background-color: black;
 }
@@ -26,6 +26,10 @@ body {
     overflow: hidden;
     position: relative; /* Set position relative for smooth transition */
     z-index: 1000; /* Set a higher z-index to make sure it's above other elements */
+    background-image: url(cat.png);
+    background-size: 100px 80px;
+    background-repeat: no-repeat;
+    padding: 1px;
 }
 
 .toolbar ul {
@@ -46,11 +50,11 @@ body {
     text-decoration: none;
     font-family:monospace;
     font-weight: bolder;
-    font-size: large;
+    font-size: 16px;
 }
 
 .toolbar a:hover {
-    color: rgb(83, 7, 83);
+    color: rgb(4, 61, 136);
     background-color: lightgrey;
 }
 
@@ -69,7 +73,81 @@ body {
 
 
 .projects{
-    padding-top: 10px;
+    padding-top: 20px;
     background-color: rgb(246, 246, 246);
     text-align: center;
 }
+
+.projects_text{
+    font-size: 20px;
+    padding-left: 35%;
+    padding-right: 35%;
+    padding-bottom: 10px;
+    color: rgb(53, 53, 53);
+    text-align: center;
+}
+
+.projects_text_2{
+    font-size: 20px;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 10px;
+    color: rgb(53, 53, 53);
+    text-align: justify;
+}
+
+.grid-container {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(10px, 1fr));
+    grid-gap: 3rem;
+    justify-items: stretch;
+}
+
+.grid > div {
+    background: #EADBC8;
+    padding: 5%;
+    border-radius: 7px;
+    border-width: 0 0 0 10px;   
+    border-color: #001242;   
+    border-style: solid;    
+    border-top-left-radius: 7px; /* Adjust the radius as needed */
+    border-bottom-left-radius: 7px; /* Adjust the radius as needed */
+    font-size: 20px;
+    text-align: justify;
+    box-shadow: 5px 5px 10px rgb(184, 184, 185);
+    position: relative;
+    /* opacity: 0; Initially set opacity to 0 */
+    /* transform: translateX(-100%); */
+}
+
+.grid-container-2{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10px, 1fr));
+    grid-gap: 4rem;
+    justify-items: stretch;
+}
+
+.grid-2 > div {
+    background: #EADBC8;
+    padding: 5%;
+    border-radius: 7px;
+    border-width: 0 0 0 10px;   
+    border-color: #001242;   
+    border-style: solid;    
+    border-top-left-radius: 7px; /* Adjust the radius as needed */
+    border-bottom-left-radius: 7px; /* Adjust the radius as needed */
+    font-size: 20px;
+    box-shadow: 5px 5px 10px rgb(184, 184, 185);
+    
+}
+
