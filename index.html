@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <script src="script.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -16,14 +16,16 @@
     
     <div class="toolbar" id="fixed-toolbar">
         <ul>
-            <li><a href="#Hobbies_section">Hobbies</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="#Projects_section">Projects</a></li>
             <li><a href="#Home_section">Home</a></li>
         </ul>
     </div>
 
     <section id = "Home_section">
+        <br><br>
         <div class = "introduction" >
+            <br>
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="4000">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
@@ -60,21 +62,28 @@
 
     <section id = "Projects_section">
         <div class = "projects" >
+            <br>
             <h2>Nine Men Morris Game</h2>
-            <img src="cat.png" height = "350" alt="...">
+            <!-- <img src="cat.png" height = "350" alt="..."> -->
+            <video width="500" height="350" controls>
+                <source src="NNM.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <br>
             <div class = "projects_text">
-                <p>The classic Nine Men's Morris built using <span style="color: black; font-weight: 700;">JavaFX</span>. Choose to play against a computer or a human.</p>
+                <p>The classic Nine Men's Morris built using <span style="color: black; font-weight: 700;">JavaFX</span>. </p>
+                <p>Choose to play against a computer or a human.</p>
                 <p>Made a wrong move? Just undo it!!</p>
                 <p>Need a rest? Save your game and continue later :)</p>
             </div>
 
             <br>
-            <br><br><br>
+            <br><br><br><br>
 
             <h2>Final Year Project: Detecting ChatGPT</h2>
             <br>
             <div class = "projects_text_2">
-                <p>A research-based project to identify factors that can affect a ChatGPT detector's accuracy (GPTZero). Our goal was to see if we could "fool" the detector by using different prompts.</p>
+                <p>A research-based project to identify factors that can affect a ChatGPT detector's accuracy (GPTZero). The goal was to see if we could "fool" the detector by using different prompts.</p>
                 
             </div>
 
@@ -89,15 +98,13 @@
                     <div>
                         <p>Utilized prompt engineering to reduce the accuracy of GPTZero using from 92% to 2%.</p>
                     </div>
-    
-
                 </div>
             </div>
 
             <br>
             <br>
-            <div class = grid-container-2>
-                <div class = grid-2>
+            <div class = "grid-container-2">
+                <div class = "grid-2 slide-in">
                     <!-- Item 1 -->
                     <div>
                         <p>"Dr. Vishnu has consistently praised your team's work and writings on multiple occasions. He has just told me that he would be talking about your project to new data science students, as an exemplary FYP for data science. Well done!"</p>
@@ -115,13 +122,12 @@
                 </div>
 
             </div>
-
+            <br><br>
         </div>
+
     </section>
 
-
-
-
+    <script src="script.js"></script>
 </body>
 
 </html>
