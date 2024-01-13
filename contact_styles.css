@@ -5,8 +5,6 @@ html, body{
 }
 
 body {
-    background: #A7CFDF;
-    background: linear-gradient(to top left, #A7CFDF 0%, #36B5FF 50%, #277BCF 86%);
     background: rgb(246, 246,246);
 }
 
@@ -49,22 +47,6 @@ body {
     background-color: lightgrey;
 }
 
-.contacts-container{
-    text-align: center;
-}
-
-.email{
-    background: #A7CFDF;
-    background: linear-gradient(to top left, #A7CFDF 0%, #36B5FF 50%, #277BCF 86%);
-    margin-left: 20%;
-    margin-right: 20%;
-    border-radius: 10%;
-    border-style: solid;
-    border-color: rgb(88, 189, 45);
-    color: white;
-}
-
-
 .grid-container {
     padding-left: 20%;
     padding-right: 20%;
@@ -72,7 +54,7 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(10px, 1fr));
+    grid-template-columns: repeat(3, minmax(10px, 1fr));
     grid-gap: 3rem;
     justify-items: stretch;
 }
@@ -84,17 +66,49 @@ body {
 }
 
 .grid > div {
-    background: #EADBC8;
-    padding: 5%;
-    border-radius: 7px;
-    border-width: 0 0 0 10px;   
-    border-color: #3f97d5;
-    /* border-color: #001242;    */
-    border-style: solid;    
-    border-top-left-radius: 7px; /* Adjust the radius as needed */
-    border-bottom-left-radius: 7px; /* Adjust the radius as needed */
-    font-size: 20px;
-    text-align: justify;
-    box-shadow: 5px 5px 10px rgb(184, 184, 185);
+    /* background: lightblue; */
+    padding-top: 15%;
+    margin-left: 6%;
+    margin-right: 6%;
+    border-radius: 3%;
+    border-style: solid;
+    border-color: lightblue;
+    border-width: 5px;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;    
+    overflow-wrap: break-word;
+}
+
+.contact_button a{
+    color: green;
     position: relative;
+    transition: all 0.5s;
+    display: inline-block;
+}
+
+.contact_button a:hover {
+    text-decoration: none;
+}
+
+.contact_button a:hover:after {
+    opacity: 1;
+    right: 0;
+} 
+
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #A7CFDF;
+    background: linear-gradient(to top left, #A7CFDF 0%, #36B5FF 50%, #277BCF 86%);
+    color: #090202;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
 }
