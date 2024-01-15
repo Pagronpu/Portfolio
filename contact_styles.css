@@ -48,13 +48,15 @@ body {
 }
 
 .grid-container {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(10px, 1fr));
+    grid-template-columns: repeat(1, minmax(10px, 1fr));
     grid-gap: 3rem;
     justify-items: stretch;
 }
@@ -67,9 +69,8 @@ body {
 
 .grid > div {
     /* background: lightblue; */
-    padding-top: 15%;
-    margin-left: 6%;
-    margin-right: 6%;
+    padding-top: 6%;
+    padding-bottom: 2%;
     border-radius: 3%;
     border-style: solid;
     border-color: lightblue;
@@ -97,9 +98,47 @@ body {
     right: 0;
 } 
 
+.split-column-container {
+    display: flex;
+    height: max-content;
+    font-family: Arial;
+}
 
+.left-half {
+    flex: 1.5; /* Take up 50% of the container */
+    background-color: #f0f0f0; /* Adjust as needed */
+    background-color: #e0e0e0; /* Adjust as needed */
+    text-align: center; /* Center the text horizontally */
+    padding: 20px;
+    background-image: url('Flowers.jpg');
+    background-size: cover;
+}
 
+.right-half {
+    flex: 1; /* Take up 50% of the container */
+    background-color: #f0f0f0; /* Adjust as needed */
+    padding: 20px;
+}
 
+.backdrop{
+    background: rgba(244, 239, 239, 0.5);
+    border-radius: 10%;
+    height: 100%;
+    margin-left: 7%;
+    margin-right: 7%;
+    position: relative;
+}
+
+.backdrop-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 footer {
     position: fixed;
@@ -112,3 +151,5 @@ footer {
     text-align: center;
     font-size: 18px;
 }
+
+
