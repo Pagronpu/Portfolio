@@ -1,3 +1,4 @@
+// debounce function for smoother movement
 function debounce(func, wait, immediate) {
   let timeout;
   return function() {
@@ -22,8 +23,6 @@ function checkSlide() {
       const elementBottom = slideElement.offsetTop + slideElement.getBoundingClientRect().height;
       const isHalfShown = slideInAt > slideElement.offsetTop;
       const isNotScrolledPast = window.scrollY < elementBottom;
-      var message = "Hello, world!";
-      console.log(message);
       if (isHalfShown && isNotScrolledPast) {
           slideElement.classList.add('active');
       } else {
@@ -32,10 +31,8 @@ function checkSlide() {
   });
 }
 
-console.log("Entering checkSlide function");
 window.addEventListener('scroll', debounce(checkSlide));
 window.addEventListener('resize', debounce(checkSlide)); // Add this line to handle resize events
-console.log("Entering checkSlide function 2");
 checkSlide(); // Initial check for elements in view on page load
 
 

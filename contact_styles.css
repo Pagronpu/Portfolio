@@ -14,7 +14,7 @@ body {
     position: fixed; /* Set position relative for smooth transition */
     z-index: 1000;  /* Set a higher z-index to make sure it's above other elements */
     top: 0;
-    background-image: url(cat.png);
+    background-image: url(backgrounds/cat.png);
     background-size: 100px 80px;
     background-repeat: no-repeat;
     padding: 1px;
@@ -57,18 +57,18 @@ body {
 }
 
 .left-half {
-    flex: 1.5; /* Take up 50% of the container */
-    background-color: #f0f0f0; /* Adjust as needed */
-    background-color: #e0e0e0; /* Adjust as needed */
-    text-align: center; /* Center the text horizontally */
+    flex: 1.5; 
+    background-color: #f0f0f0; 
+    background-color: #e0e0e0; 
+    text-align: center; 
     padding: 20px;
-    background-image: url('Flowers.jpg');
+    background-image: url(backgrounds/flowers.jpg);
     background-size: cover;
 }
 
 .right-half {
     flex: 1; /* Take up 50% of the container */
-    background-color: #f0f0f0; /* Adjust as needed */
+    background-color: #f0f0f0; 
     padding: 20px;
 }
 
@@ -172,8 +172,8 @@ body {
 footer {
     bottom: 0;
     width: 100%;
-    background: #A7CFDF;
-    background: linear-gradient(to top left, #A7CFDF 0%, #36B5FF 50%, #277BCF 86%);
+    /* background: #A7CFDF;
+    background: linear-gradient(to top left, #A7CFDF 0%, #36B5FF 50%, #277BCF 86%); */
     color: #090202;
     padding: 20px;
     text-align: center;
