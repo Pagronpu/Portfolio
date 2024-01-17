@@ -7,8 +7,16 @@ body {
 
 .introduction{
     padding-top: 20px;
-    text-align: center; 
-    background-color: black;
+    text-align: center;
+
+    /* background: #022c43; */
+
+    /* background: #A7CFDF;
+    background: linear-gradient(to top left, #A7CFDF 0%, #36B5FF 50%, #277BCF 86%); */
+
+    /* background: rgb(2,0,36); */
+
+    background: linear-gradient(to right top, #051937, #113b62, #19628f, #1b8cbb, #1eb9e6);
 }
 
 .introduction_text{
@@ -17,6 +25,7 @@ body {
     padding-left: 35%;
     padding-right: 35%;
     padding-bottom: 10px;
+    text-align: justify;
 }
 
 .toolbar {
@@ -63,7 +72,6 @@ body {
     max-width: 400px; /* Set your desired maximum width */
     margin: auto;     /* Center the carousel */
 }
-
 
 .projects{
     padding-top: 20px;
